@@ -1,21 +1,9 @@
-const os = require("os");
+const amount = 12;
 
-//info about current user
+if (amount < 10) {
+  console.log("small number");
+} else {
+  console.log("large number");
+}
 
-const user = os.userInfo();
-
-console.log(user);
-
-//method returns the system uptime in seconds
-
-console.log(`The system uptime is ${os.uptime()} seconds`);
-
-const currentOs = {
-    name: os.type(),
-    release: os.release(),
-    totlaMem: os.totalmem(),
-    freeMem: os.freemem()
-};
-
-console.log(currentOs);
-
+console.log(`Hello Universe^^`);
