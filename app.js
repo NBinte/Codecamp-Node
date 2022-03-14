@@ -1,10 +1,21 @@
-const amount = 12;
+const os = require("os");
 
-if(amount < 10){
-    console.log("small number");
-}else{
-    console.log("large number");
-}
+//info about current user
 
-console.log(`Hello Universe^^`);
+const user = os.userInfo();
+
+console.log(user);
+
+//method returns the system uptime in seconds
+
+console.log(`The system uptime is ${os.uptime()} seconds`);
+
+const currentOs = {
+    name: os.type(),
+    release: os.release(),
+    totlaMem: os.totalmem(),
+    freeMem: os.freemem()
+};
+
+console.log(currentOs);
 
